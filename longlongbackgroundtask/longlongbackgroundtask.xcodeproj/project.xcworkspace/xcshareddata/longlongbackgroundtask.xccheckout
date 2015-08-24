@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>72371166-573A-4E92-BBD6-4AEC449EDED6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>longlongbackgroundtask</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ECB453192FB83D94FD89505BABFE894DF59690EC</key>
+		<string>https://github.com/firewolf-ljw/BackgroundTask.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>longlongbackgroundtask/longlongbackgroundtask.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ECB453192FB83D94FD89505BABFE894DF59690EC</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/firewolf-ljw/BackgroundTask.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ECB453192FB83D94FD89505BABFE894DF59690EC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ECB453192FB83D94FD89505BABFE894DF59690EC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BackgroundTask</string>
+		</dict>
+	</array>
+</dict>
+</plist>
