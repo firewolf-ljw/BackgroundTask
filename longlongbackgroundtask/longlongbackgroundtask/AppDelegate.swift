@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationDidEnterBackground(application: UIApplication) {
-        println("application Will Enter Background")
+        print("application Will Enter Background")
         
         self.bgTask = app.beginBackgroundTaskWithExpirationHandler() {
             self.app.endBackgroundTask(self.bgTask)
@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func doSomething() {
-        println("doing something, \(app.backgroundTimeRemaining)")
+        print("doing something, \(app.backgroundTimeRemaining)")
     }
     
     func applyForMoreTime() {
@@ -54,9 +54,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let filePathUrl = NSURL(string: NSBundle.mainBundle().pathForResource("1", ofType: "wav")!)!
             
-            AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: AVAudioSessionCategoryOptions.MixWithOthers, error: nil)
+            do {
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: AVAudioSessionCategoryOptions.MixWithOthers)
+            } catch _ {
+            }
             
-            self.audioPlayer = AVAudioPlayer(contentsOfURL: filePathUrl, error: nil)
+            self.audioPlayer = try? AVAudioPlayer(contentsOfURL: filePathUrl)
             
             self.audioEngine.reset()
             self.audioPlayer.play()
@@ -72,7 +75,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillEnterForeground(application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-        println("application Will Enter Foreground")
+        print("application Will Enter Foreground")
     }
     
     func applicationDidBecomeActive(application: UIApplication) {
